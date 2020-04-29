@@ -1,10 +1,14 @@
 # Minimalist-Web-Notepad-API
- Minimalist Web Notepad Add API
+ Minimalist Web Notepad API：一款带API的开源轻量级简洁在线笔记本
 
 相信大家都会试过寻找地方来进行临时记录，或者是传输一个文本给其它设备或者他人。
+
 最近我在github发现了一个非常不错的项目[Minimalist Web Notepad][1]。
+
 十分的轻量简洁代码仅5KB，用于临时记录与传输文本非常方便，简直是极简主义者必备品！
+
 我在原项目的基础上加入了API接口，日常使用更加方便。
+
 
 安装教程
 --
@@ -35,27 +39,41 @@ API文档
 **获取指定笔记文本**
 
 接口地址：/{note}
+
 请求方式：get
+
 请求参数：raw
+
 返回数据：指定笔记的内容(string)
+
 示例参数：/demo?raw
 
 **新建指定地址笔记并写入文本**
 **或修改指定地址笔记文本**
 
 接口地址：/{note}
+
 请求方式：get post
+
 请求参数：text
+
 返回数据：saved(string)
+
 示例参数：/demo?text=test
+
 
 **新建随机地址笔记并添加文本**
 
 接口地址：/?new
+
 请求方式：get post
+
 请求参数：text
+
 返回数据：新建的网址url(string)
+
 示例参数：/?new&text=test
+
 
 Demo
 ----
